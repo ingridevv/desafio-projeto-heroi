@@ -2,7 +2,7 @@
 
 **O Que deve ser utilizado**
 
-- Variáveis
+- [x] Variáveis
 - Operadores
 - Laços de repetição
 - Estruturas de decisões
