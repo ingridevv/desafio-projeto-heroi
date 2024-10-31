@@ -1,36 +1,40 @@
-document
+niveis = {
+  Novato: 0,
+  Ferro: 1000,
+  Bronze: 2000,
+  Prata: 5000,
+  Ouro: 7000,
+  Platina: 8000,
+  Ascendente: 9000,
+  Imortal: 10000,
+  Radiante: 10001,
+};
+
+  function mostraNivel(nivelXP){
+    let nivel = "";
+
+    // Itera chaves dos níveis buscando o primeiro valor que ultrapasse o XP do jogador
+    Object.keys(niveis).forEach((k) => {
+      if (nivelXP >= niveis[k]) {
+        nivel = k;
+      }
+    });
+
+    return nivel;
+  }
+
+  document
   .getElementById("formHeroi")
   .addEventListener("submit", function (event) {
     event.preventDefault(); // Impede o envio do formulário
 
-    const nomeHeroi = document.getElementById("name").value; // coletar nome
-    const nivelXP = parseInt(document.getElementById("xp").value); // Coleta XP
-    let nivel = ""
+    // Coleta de dados
+    const nomeHeroi = document.getElementById("name").value; 
+    const nivelXP = parseInt(document.getElementById("xp").value);
 
-    // Classificação do Nível
-    if (nivelXP <= 1000) {
-      nivel = "Ferro"
-    } else if (nivelXP <= 1.001 && nivelXP <= 2000) {
-      nivel = "Bronze"
-    } else if (nivelXP <= 2001 && nivelXP <= 5.000) {
-      nivel = "Prata"
-    } else if (nivelXP <= 5.001 && nivelXP <= 7.000) {
-      nivel = "Ouro"
-    } else if (nivelXP <= 7.001 && nivelXP <= 8.000) {
-      nivel = "Platina"
-    } else if (nivelXP <= 8.001 && nivelXP <= 9.000) {
-      nivel = "Ascendente"
-    } else if (nivelXP <= 9.001 && nivelXP <= 10.000) {
-      nivel = "Imortal"
-    } else if (nivelXP >= 10001) {
-      nivel = "Radiante"
-    } else {
-        nivel = "Não foi possível calcular o nível do herói"
-    }
-
+    nivel = mostraNivel(nivelXP)
+    
     document.getElementById(
       "result"
-    ).innerText = `O Herói de nome ${nomeHeroi} está no nível de ${nivel}.`  
-})
-
-
+    ).innerText = `O Herói de nome ${nomeHeroi} está no nível de ${nivel}.`;
+  });
