@@ -44,8 +44,8 @@ niveis = {
 
 ## O que aprendi neste desafio?
 A construção do código para este desafio consolidou conhecimentos fundamentais sobre a lógica de programação e a aplicação prática desses conceitos. 
-Além de desenvolver uma estrutura de código simples para atender aos requisitos do desafio, foi implementada uma interface básica que facilitou a interação do usuário. 
-Também foi realizada a refatoração do código, com melhorias na estrutura de decisão e com boas práticas.
+Além de desenvolver uma estrutura de código simples para atender aos requisitos do desafio, com uma interface que facilita a interação do usuário e 
+a refatoração do código, com melhorias na estrutura de decisão e boas práticas.
 
 
 
