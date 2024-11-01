@@ -3,11 +3,11 @@
 **Desafio Proposto**: Utilizar variáveis para armazenar o nome e quantidade de experiência (XP) de um herói, e com uma estrutura de decisão 
 classificar o heróis nos seguintes níveis: Ferro, Bronze, Prata, Ouro, Platina, Ascendente, Imortal e Radiante. 
 
+### Linguagens e Bibliotecas utilizadas: HTML, CSS, TailwindCSS e JavaScript.
+
 Este desafio apresenta uma aplicação prática dos conhecimentos sobre lógica de programação e pensamento computacional obtidos no módulo de "Estruturas de Controle" do Bootmcamp GFT Start #6 da Digital Innovation One em parceria com a GFT.
 
 [Vídeo de Apresentação](https://youtu.be/PWiHGfmYIqE?si=W2lkBjnH2ro4d8qq)
-
-### Linguagens e Bibliotecas utilizadas: HTML, CSS, TailwindCSS e JavaScript.
 
 ## Melhorias - Refatoração 
 
